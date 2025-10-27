@@ -1,4 +1,4 @@
-moduls.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const Komik = sequelize.define('Komik', {
         Id: {
             type: DataTypes.INTEGER,
@@ -9,10 +9,10 @@ moduls.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         description: {
-            type: DataTypes.string,
+            type: DataTypes.TEXT,
         },
         author: {
-            type: DataTypes.string,
+            type: DataTypes.STRING,
         }
     });
     return Komik;
